@@ -17,17 +17,22 @@
     <main>
         <section id="displayTimer" class="timerDisplay"> 
         <h2> Timer </h2>
-        <h3> you got <spa> ---</spa> second left </h3>
+        <h3> you got <span id="timeLeft"> ---</span> second left </h3>
+        <p id="gameOver">-------------</p>
         </section>
-        <section id="displayGame" class="gameDisplay">
-            <h3> Puzzle goes here</h3>
-            <button> Click here to start the</button>
+        <section class="gameDisplay">
+            <h2>Guess the Word</h2>
+            <h3>The word has <span id="length">0</span> letters</h3>
+            <h3 id="displayGame"></h3>
+            <button id="playGame"> Click here to start the</button>
         </section>
         <section id="displayScoreboard" class="scoreDisplay">
             <h2> scoreboard </h2>
-            <p> You got the word correctly <span id="winscore"> --- </span> Times !</p>
+            <p> wins: <span id="wins"></span></p>
+            <p> losses: <span id="losses"></span></p>
         </section>
     </main>
+    <script src="./asset/script.js"></script>
 </body>
 
 
